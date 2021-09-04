@@ -2,10 +2,9 @@
   <router-link
     :to="{ name: 'project', params: { id: Title } }"
     class="tile"
-    v-bind:class="{ intersecting: isIntersecting }"
   >
     <img v-bind:src="'tiles/' + ImgName" />
-    <div class="mask" @touchStart="onTouchStart">
+    <div class="titlebar">
       <h3 class="title playfairdisplay-semibold">{{ Title }}</h3>
       <h4 class="subtext roboto-thin">{{ SubText }}</h4>
     </div>
@@ -18,29 +17,8 @@ export default {
   props: {
     Title: String,
     SubText: String,
-    ImgName: String,
-  },
-  mounted() {
-    let options = {
-      root: null,
-      rootMargin: `${-window.innerHeight / 15}px 0px ${-window.innerHeight / 4}px 0px`,
-      threshold: 1.0,
-    };
-
-    let toObserve = this.$el;
-    let observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        this.isIntersecting = entry.isIntersecting;
-      });
-    }, options);
-
-    observer.observe(toObserve);
-  },
-  data() {
-    return {
-      isIntersecting: false,
-    };
-  },
+    ImgName: String
+  }
 };
 </script>
 
@@ -49,6 +27,7 @@ export default {
 .tile {
   position: relative;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 img {
@@ -71,34 +50,18 @@ img {
   margin: 0;
 }
 
-.mask {
-  display: none;
-  top: 0;
-}
-
-.intersecting .mask {
+.titlebar {
   display: flex;
   flex-direction: column;
   position: absolute;
+  align-items: flex-start;
+  bottom:0; 
+  min-height: 60px;
   justify-content: center;
-  align-items: center;
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 70%);
+  background-color: rgba(56, 56, 56, 70%);
 }
 
-@media (hover: hover) {
-  .tile:hover .mask {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 70%);
-  }
-}
 
 .title {
   color: #fcfcfc;
