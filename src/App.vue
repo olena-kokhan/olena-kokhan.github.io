@@ -7,7 +7,7 @@
 
   <footer class="roboto-thin">
     <div class="copyright">&#169; Olena Kokhan</div>
-    <div class="go-up" onclick="window.scrollTo(0,0)">&uarr; GO UP</div>
+    <img class="go-up" onclick="window.scrollTo({top: 0, behavior: 'smooth'});" src="@/assets/arrowup.svg"/>
   </footer>
 </template>
 
@@ -71,6 +71,7 @@ body {
 footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 50px 20px;
 }
 
@@ -83,6 +84,9 @@ footer {
 }
 
 .go-up {
+  width: 70px;
+  height: 70px;
+  padding: 20px;
   cursor: pointer;
 }
 </style>

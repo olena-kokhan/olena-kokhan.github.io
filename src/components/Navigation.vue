@@ -20,9 +20,9 @@
   <transition name="fade">
     <div class="menu" v-if="menuVisible">
       <div class="menu-links">
-        <router-link to="/">Work</router-link>
-        <router-link to="/About">About</router-link>
-        <router-link to="/Contact">Contact</router-link>
+        <router-link to="/" @click="menuClicked">Work</router-link>
+        <router-link to="/About" @click="menuClicked">About</router-link>
+        <router-link to="/Contact" @click="menuClicked">Contact</router-link>
       </div>
     </div>
   </transition>
@@ -41,7 +41,7 @@ export default {
         document.body.style.overflow = "";
         document.body.style.height = "";
       }
-    },
+    }
   },
   data() {
     return {
@@ -53,6 +53,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+* {
+    --var-header-height: 70px;
+}
+
 .navigation {
   display: flex;
   align-items: center;
@@ -60,31 +65,32 @@ export default {
   max-width: 1000px;
   padding-bottom: 10px;
   justify-content: space-between;
-  padding: 20px;
+  padding: 0 20px;
   position: sticky;
   top: 0;
   z-index: 1;
   background-color: white;
+  height: var(--var-header-height)
 }
 
 .logo {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
 }
 
 .hamburger,
 .close {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .menu {
-  height: calc(100vh - 110px);
+  height: calc(100vh - var(--var-header-height));
   width: 100vw;
   position: fixed;
   z-index: 100;
   background: white;
-  top: 110px;
+  top: var(--var-header-height);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,45 +100,27 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transform: translateY(-55px);
+  transform: translateY( calc(var(--var-header-height) * -1));
 }
 
 a {
   display: block;
   margin: 0 10px;
   cursor: pointer;
-  border-bottom: 1px solid transparent;
   text-decoration: none;
-  color: black;
+  color: #404040;
+  opacity: .57;
+  font-size: 30px;
+  padding: 5px;
 }
 
 a:hover {
-  border-bottom: 1px solid black;
+  opacity: 1;
 }
 
 a.router-link-active {
-  border-bottom: 1px solid black;
+  opacity:1;
   cursor: default;
-}
-
-@media (min-width: 500px) {
-  .navigation {
-    flex-direction: row;
-  }
-
-  img {
-    width: 100px;
-    height: 100px;
-  }
-
-  nav {
-    flex: 1 0 auto;
-    justify-content: flex-end;
-  }
-
-  a {
-    margin: 0 20px;
-  }
 }
 
 .fade-enter-active,

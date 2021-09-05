@@ -25,6 +25,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .tile {
+  display: flex;
   position: relative;
   cursor: pointer;
   margin-bottom: 20px;
@@ -46,7 +47,6 @@ img {
 .title,
 .subtext {
   padding: 0 20px;
-  text-align: center;
   margin: 0;
 }
 
@@ -60,6 +60,7 @@ img {
   justify-content: center;
   width: 100%;
   background-color: rgba(56, 56, 56, 70%);
+  padding: 10px 0;
 }
 
 
