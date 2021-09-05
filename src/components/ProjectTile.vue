@@ -5,7 +5,7 @@
   >
     <img v-bind:src="'tiles/' + ImgName" />
     <div class="titlebar">
-      <h3 class="title playfairdisplay-semibold">{{ Title }}</h3>
+      <h3 class="title youngserif-regular">{{ Title }}</h3>
       <h4 class="subtext roboto-thin">{{ SubText }}</h4>
     </div>
   </router-link>

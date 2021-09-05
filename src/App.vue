@@ -40,6 +40,16 @@ body {
 }
 
 @font-face {
+  font-family: "WorkSans Regular";
+  src: url("./assets/fonts/WorkSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "YoungSerif Regular";
+  src: url("./assets/fonts/YoungSerif-Regular.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "PlayfairDisplay Medium";
   src: url("./assets/fonts/PlayfairDisplay-Medium.ttf") format("truetype");
 }
@@ -52,6 +62,14 @@ body {
 @font-face {
   font-family: "Roboto Thin";
   src: url("./assets/fonts/Roboto-Thin.ttf") format("truetype");
+}
+
+.youngserif-regular {
+  font-family: "YoungSerif Regular";
+}
+
+.worksans-regular {
+  font-family: "WorkSans Regular";
 }
 
 .playfairdisplay-medium {
@@ -70,6 +88,7 @@ body {
 <style scoped>
 footer {
   display: flex;
+  font-weight: bold;
   justify-content: space-between;
   align-items: center;
   padding: 50px 20px;

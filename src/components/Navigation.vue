@@ -1,5 +1,5 @@
 <template>
-  <div class="navigation playfairdisplay-medium">
+  <div class="navigation">
     <img class="logo" src="../assets/OK.svg" alt="Logo" />
     <img
       v-if="!menuVisible"
@@ -18,7 +18,7 @@
   </div>
 
   <transition name="fade">
-    <div class="menu" v-if="menuVisible">
+    <div class="menu youngserif-regular" v-if="menuVisible">
       <div class="menu-links">
         <router-link to="/" @click="menuClicked">Work</router-link>
         <router-link to="/About" @click="menuClicked">About</router-link>
