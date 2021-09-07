@@ -1,6 +1,6 @@
 <template>
   <router-link
-    :to="{ name: 'project', params: { id: Title } }"
+    :to="{ name: 'work', params: { id: Title } }"
     class="tile"
   >
     <img v-bind:src="'tiles/' + ImgName" />
