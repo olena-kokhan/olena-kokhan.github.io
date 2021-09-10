@@ -8,22 +8,24 @@ import Contact from './components/Contact.vue'
 
 
 const routes = [
-   { path: '/', component: Home },
-   { path: '/Work/:id/', component: Project, name: 'work' },
-   { path: '/About/', component: About, name: 'about' },
-   { path: '/Contact/', component: Contact, name: 'contact' },
+  { path: '/', component: Home },
+  { path: '/Work/:id/', component: Project, name: 'work' },
+  { path: '/About/', component: About, name: 'about' },
+  { path: '/Contact/', component: Contact, name: 'contact' },
 ]
 
 const router = createRouter({
-   history: createWebHistory(),
-   routes,
-   scrollBehavior (to, from, savedPosition) {
+  history: createWebHistory(),
+  routes,
+  scrollBehavior(to, from, savedPosition) {
       if (savedPosition) {
+        document.body.style.minHeight = savedPosition.top * 10 + "px";
+        setTimeout(() => {document.body.style.minHeight = ""}, 20);
         return savedPosition
       } else {
         return { left: 0, top: 0 }
       }
-    }
+  }
 });
 
 createApp(App).use(router).mount('#app')

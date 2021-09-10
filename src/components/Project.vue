@@ -319,7 +319,6 @@ export default {
     const id = route.params.id;
 
     const project = projectDataMap[id];
-    console.log(project);
     return {
       id,
       project,

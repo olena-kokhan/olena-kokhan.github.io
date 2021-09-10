@@ -1,6 +1,8 @@
 <template>
   <div class="navigation">
-    <img class="logo" src="../assets/OK.svg" alt="Logo" />
+    <router-link class="link-logo" to="/">
+      <img class="logo" src="../assets/OK.svg" alt="Logo" />
+    </router-link>
     <img
       v-if="!menuVisible"
       class="hamburger"
@@ -73,6 +75,10 @@ export default {
   height: var(--var-header-height)
 }
 
+.link-logo {
+  text-decoration: none;
+}
+
 .logo {
   width: 50px;
   height: 50px;
@@ -103,7 +109,7 @@ export default {
   transform: translateY( calc(var(--var-header-height) * -1));
 }
 
-a {
+.menu-links a {
   display: block;
   margin: 0 10px;
   cursor: pointer;
@@ -114,11 +120,11 @@ a {
   padding: 5px;
 }
 
-a:hover {
+.menu-links a:hover {
   opacity: 1;
 }
 
-a.router-link-active {
+.menu-links a.router-link-active {
   opacity:1;
   cursor: default;
 }
