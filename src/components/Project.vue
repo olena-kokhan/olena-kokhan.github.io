@@ -14,11 +14,11 @@
       </div>
       <div class="image-wrapper">
         <img
-          class="main-image"
-          v-for="bigImage of project.bigImages"
+          class="image"
+          v-for="bigImage of project.images"
           :key="bigImage"
           :alt="bigImage"
-          :src="bigImage"
+          :src="'/ProjectsPhotos/' + bigImage"
         />
       </div>
     </div>
@@ -26,51 +26,8 @@
 </template>
 
 <script>
+
 var projectDataMap = {
-  "Oh Art": {
-    projectTitle: "Oh Art",
-    techniques: [
-      "Photography",
-      "Digital printing",
-      "Book Binding",
-      "Letterpress",
-      "Handmade glue binding",
-    ],
-    bodyText:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    bigImages: [
-      "main/OhArt1.jpg",
-      "main/OhArt2.jpg",
-      "main/OhArt3.jpg",
-      "main/OhArt4.jpg",
-    ],
-    smallImages: [
-      "preview/OhArtSmallPreview1.jpg",
-      "preview/OhArtSmallPreview2.jpg",
-      "preview/OhArtSmallPreview3.jpg",
-      "preview/OhArtSmallPreview4.jpg",
-      "preview/OhArtSmallPreview5.jpg",
-      "preview/OhArtSmallPreview6.jpg",
-      "preview/OhArtSmallPreview7.jpg",
-      "preview/OhArtSmallPreview8.jpg",
-      "preview/OhArtSmallPreview9.jpg",
-    ],
-  },
-  "Decision=Limits": {
-    projectTitle: "Decision=Limits",
-    techniques: [
-      "Silkscreen printing",
-      "Poster Design",
-      "Analogue Design",
-      "Handmade production",
-    ],
-    bodyText: "……",
-    bigImages: [
-      "main/Decision1.jpg",
-      "main/Decision2.jpg",
-      "main/Decision3.jpg",
-    ]
-  },
   "Intergenerational Self": {
     projectTitle: "Intergenerational Self",
     techniques: [
@@ -82,7 +39,79 @@ var projectDataMap = {
       "Scanning",
     ],
     bodyText: "……",
-    bigImages: ["IntergenerationalSelf1.png", "OhArt2.png"]
+    images: [
+      "IntergenerationalSelf/IntergenerationalSelf_1200x850__1.jpg",
+      "IntergenerationalSelf/IntergenerationalSelf_1200x850_2.jpg",
+      "IntergenerationalSelf/IntergenerationalSelf_580x440_3.jpg",
+      "IntergenerationalSelf/IntergenerationalSelf_580x440_4.jpg",
+      "IntergenerationalSelf/IntergenerationalSelf_1200x850_5.jpg",
+      "IntergenerationalSelf/IntergenerationalSelf_1200x850_6.jpg",
+      "IntergenerationalSelf/IntergenerationalSelf_1200x850_7.jpg",
+      "IntergenerationalSelf/IntergenerationalSelf_1200x850_8.jpg"
+    ]
+  },
+  "Oh Art": {
+    projectTitle: "Oh Art",
+    techniques: [
+      "Photography",
+      "Digital printing",
+      "Book Binding",
+      "Letterpress",
+      "Handmade glue binding",
+    ],
+    bodyText:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    images: [
+      "OhArt/OhArt_1200x850_1.jpg",
+      "OhArt/OhArt_1200x850_2.jpg",
+      "OhArt/OhArt_580x440_3.jpg",
+      "OhArt/OhArt_580x440_4.jpg",
+      "OhArt/OhArt_1200x850_5.jpg",
+      "OhArt/OhArt_1200x850_6.jpg",
+      "OhArt/OhArt_580x440_7.jpg",
+      "OhArt/OhArt_580x440_8.jpg",
+      "OhArt/OhArt_1200x850_9.jpg",
+      "OhArt/OhArt_1200x850_10.jpg"
+    ]
+  },
+  "Natural Medication Magazine Design": {
+    projectTitle: "Natural Medication Magazine Design",
+    techniques: [
+      "Editorial Design", 
+      "Magazine layout"
+    ],
+    bodyText: "……",
+     images: [
+      "NUGMagazine/NUGMagazine_1200x850_1.jpg",
+      "NUGMagazine/NUGMagazine_1200x850_2.jpg",
+      "NUGMagazine/NUGMagazine_1200x850_3.jpg",
+      "NUGMagazine/NUGMagazine_1200x850_4.jpg",
+      "NUGMagazine/NUGMagazine_1200x850_5.jpg",
+      "NUGMagazine/NUGMagazine_1200x850_6.jpg",
+      "NUGMagazine/NUGMagazine_1200x850_7.jpg"
+    ]
+  },
+  "Decision=Limits": {
+    projectTitle: "Decision=Limits",
+    techniques: [
+      "Silkscreen printing",
+      "Poster Design",
+      "Analogue Design",
+      "Handmade production",
+    ],
+    bodyText: "……",
+    images: [
+      "Decision=Limits/Decision_580x850_1.jpg",
+      "Decision=Limits/Decision_580x850_2.jpg",
+      "Decision=Limits/Decision_1200x850_3.jpg",
+      "Decision=Limits/Decision_580x440_4.jpg",
+      "Decision=Limits/Decision_580x440_5.jpg",
+      "Decision=Limits/Decision_1200x850_6.jpg",
+      "Decision=Limits/Decision_1200x850_7.jpg",
+      "Decision=Limits/Decision_580x440_8.jpg",
+      "Decision=Limits/Decision_580x440_9.jpg",
+      "Decision=Limits/Decision_1200x850_10.jpg"
+    ]
   },
   "Symbols & Signs": {
     projectTitle: "Symbols & Signs",
@@ -94,13 +123,66 @@ var projectDataMap = {
       "Typography",
     ],
     bodyText: "……",
-    bigImages: ["SS1.png", "SS2.png"]
+    images: [
+      "Symbols/Symbols_1200x850_1.jpg",
+      "Symbols/Symbols_1200x850_2.jpg",
+      "Symbols/Symbols_580x850_3.jpg",
+      "Symbols/Symbols_580x850_4.jpg",
+      "Symbols/Symbols_1200x850_5.jpg",
+      "Symbols/Symbols_580x440_6.jpg",
+      "Symbols/Symbols_580x440_7.jpg",
+      "Symbols/Symbols_1200x850_8.jpg",
+      "Symbols/Symbols_580x440_9.jpg",
+      "Symbols/Symbols_580x440_10.jpg",
+      "Symbols/Symbols_1200x850_11.jpg",
+      "Symbols/Symbols_1200x850_12.jpg"
+    ]
   },
-  Terrain: {
-    projectTitle: "Terrain",
-    techniques: ["Experimental Design", "Poster Design", "Tessellation"],
+  "Natural Medication Magazine Series Design": {
+    projectTitle: "Natural Medication Magazine Series Design",
+    techniques: [
+      "Editorial Design", 
+      "Logo Design",
+      "Layout Design",
+    ],
     bodyText: "……",
-    bigImages: ["Terrain1.png", "Terrain2.png"],
+     images: [
+      "NUGNewSeries/NUGNewSeries_1200x850_1.jpg",
+      "NUGNewSeries/NUGNewSeries_1200x850_2.jpg",
+      "NUGNewSeries/NUGNewSeries_1200x850_3.jpg",
+      "NUGNewSeries/NUGNewSeries_1200x850_4.jpg"
+    ]
+  },
+  "Company Website": {
+    projectTitle: "Company Website",
+    techniques: [
+      "Web Design", 
+      "UX & UI design"],
+    bodyText: "……",
+    images: [
+      "SUDWebsite/SUDWebsite_1200x850_1.jpg",
+      "SUDWebsite/SUDWebsite_1200x1700_2.jpg",
+      "SUDWebsite/SUDWebsite_1200x850_3.jpg"
+    ]
+  },
+  "Terrain": {
+    projectTitle: "Terrain",
+    techniques: [
+      "Experimental Design", 
+      "Poster Design", 
+      "Tessellation"],
+    bodyText: "……",
+    images: [
+      "Terrain/Terrain_580x850_1.jpg",
+      "Terrain/Terrain_580x850_2.jpg",
+      "Terrain/Terrain_1200x850__3.jpg",
+      "Terrain/Terrain_1200x850__4.jpg",
+      "Terrain/Terrain_1200x850__5.jpg",
+      "Terrain/Terrain_580x440_6.jpg",
+      "Terrain/Terrain_580x440_7.jpg",
+      "Terrain/Terrain_1200x850__8.jpg",
+      "Terrain/Terrain_1200x850__9.jpg"
+    ]
   },
   "Say Hi To Design": {
     projectTitle: "Say Hi To Design",
@@ -111,18 +193,39 @@ var projectDataMap = {
       "Logo Design",
     ],
     bodyText: "……",
-    bigImages: ["SHTD1.png", "SHTD2.png"],
+    images: [
+      "SHTD/SHTD_1200x850_1.jpg",
+      "SHTD/SHTD_580x440_2.jpg",
+      "SHTD/SHTD_580x440_3.jpg",
+      "SHTD/SHTD_1200x850_4.jpg",
+      "SHTD/SHTD_1200x850_5.jpg",
+      "SHTD/SHTD_1200x850_6.jpg",
+      "SHTD/SHTD_580x440_7.jpg",
+      "SHTD/SHTD_580x440_8.jpg",
+      "SHTD/SHTD_1200x850_9.jpg",
+      "SHTD/SHTD_580x850_10.jpg",
+      "SHTD/SHTD_580x850_11.jpg",
+      "SHTD/SHTD_1200x850_12.jpg"
+    ]
   },
-  "Don’t pressure me": {
-    projectTitle: "Don’t pressure me",
-    techniques: [
-      "Silkscreen printing",
-      "Poster Design",
-      "Analogue Design",
-      "Handmade production",
-    ],
+
+  "Caslon": {
+    projectTitle: "Caslon",
+    techniques: ["Typography", "Book Binding", "Laser Cutting"],
     bodyText: "……",
-    bigImages: ["main/Pressure1.jpg", "main/Pressure2.jpg"]
+    images: [
+      "Caslon/Caslon_1200x850_1.jpg",
+      "Caslon/Caslon_1200x850_2.jpg",
+      "Caslon/Caslon_580x440_3.jpg",
+      "Caslon/Caslon_580x440_4.jpg",
+      "Caslon/Caslon_1200x850_5.jpg",
+      "Caslon/Caslon_1200x850_6.jpg",
+      "Caslon/Caslon_580x440_7.jpg",
+      "Caslon/Caslon_580x440_8.jpg",
+      "Caslon/Caslon_1200x850_9.jpg",
+      "Caslon/Caslon_580x850_10.jpg",
+      "Caslon/Caslon_580x850_11.jpg"
+    ]
   },
   "See It": {
     projectTitle: "See It",
@@ -136,70 +239,74 @@ var projectDataMap = {
       "Drilling",
     ],
     bodyText: "……",
-    bigImages: ["SeeIt1.png", "SeeIt2.png"],
+    images: [
+      "SeeIt/SeeIt_1200x850_1.jpg",
+      "SeeIt/SeeIt_1200x850_2.jpg",
+      "SeeIt/SeeIt_580x440_3.jpg",
+      "SeeIt/SeeIt_580x440_4.jpg",
+      "SeeIt/SeeIt_1200x850_5.jpg",
+      "SeeIt/SeeIt_580x440_6.jpg",
+      "SeeIt/SeeIt_580x440_7.jpg",
+      "SeeIt/SeeIt_1200x850_8.jpg",
+      "SeeIt/SeeIt_580x440_9.jpg",
+      "SeeIt/SeeIt_580x440_10.jpg",
+      "SeeIt/SeeIt_1200x850_11.jpg",
+      "SeeIt/SeeIt_1200x850_12.jpg",
+      "SeeIt/SeeIt_1200x850_13.jpg"
+    ]
   },
-
-  Caslon: {
-    projectTitle: "Caslon",
-    techniques: ["Typography", "Book Binding", "Laser Cutting"],
+"Don’t pressure me": {
+    projectTitle: "Don’t pressure me",
+    techniques: [
+      "Silkscreen printing",
+      "Poster Design",
+      "Analogue Design",
+      "Handmade production",
+    ],
     bodyText: "……",
-    bigImages: ["Caslon1.png", "Caslon2.png"],
+    images: [
+      "Pressure/Pressure_1200x850_1.jpg",
+      "Pressure/Pressure_1200x850_2.jpg",
+      "Pressure/Pressure_1200x850_3.jpg",
+      "Pressure/Pressure_580x440_4.jpg",
+      "Pressure/Pressure_580x440_5.jpg",
+      "Pressure/Pressure_1200x850_6.jpg",
+      "Pressure/Pressure_580x850_7.jpg",
+      "Pressure/Pressure_580x850_8.jpg",
+      "Pressure/Pressure_1200x850_9.jpg",
+      "Pressure/Pressure_580x850_10.jpg",
+      "Pressure/Pressure_580x850_11.jpg"
+    ]
   },
-  Type: {
-    projectTitle: "Type",
-    techniques: ["Cover Design", "Experimental design"],
+  "Social Media": {
+    projectTitle: "Social Media Posters",
+    techniques: [
+      "Photography", 
+      "Illustration", 
+      "Typography"
+    ],
     bodyText: "……",
-    bigImages: ["Type1.png", "Type2.png"],
-  },
-  "Pharmacy Website": {
-    projectTitle: "Pharmacy Website",
-    techniques: ["Web Design", "UX & UI design"],
-    bodyText: "……",
-    bigImages: ["PharmacyWebsite1.png", "PharmacyWebsite2.png"],
-  },
-  Solaris: {
-    projectTitle: "Solaris",
-    techniques: ["Cover Design"],
-    bodyText: "……",
-    bigImages: ["Solaris1.png", "Solaris2.png"],
-  },
-  "Duisburg Signal Tower": {
-    projectTitle: "Duisburg Signal Tower",
-    techniques: ["Wayfinding design", "Font Design", "3D", "Laser Cutting"],
-    bodyText: "……",
-    bigImages: ["SignalTower1.png", "SignalTower2.png"],
-  },
-  Posters: {
-    projectTitle: "Posters",
-    techniques: ["Photography", "Illustration", "Typography"],
-    bodyText: "……",
-    bigImages: ["Posters1.png", "Posters2.png"],
-  },
-  "Modular Scarf": {
-    projectTitle: "Modular Scarf",
-    techniques: ["Pattern making", "Laser Cutting", "Typography"],
-    bodyText:
-      "The idea for this scarf was inspired by personal experience. As a tall person, I have always experienced discomfort when wearing scarves, as they never cover the entire neck. That's why I wanted to create a scarf that can be adjusted in different dimensions (width, length) according to the individual parameters and desires of the person. To achieve this goal, I used a modular design creating a scarf of two shapes. It can be joined in a flexible pattern that can be changed to any width and length by exploring the interlocking patters. The shape of each unique module is an abstraction of figures of circles that emulates in the scarf a three-dimensional effect. Furthermore, its elements create a beautiful flower - shaped design.The pattern can also be configured in parts of diverse garments, e.g.sleeves.",
-    bigImages: ["ModularScarf1.png", "Modular Scarf2.png"],
+    images: [
+      "SMPosters/SMPosters_1200x850_1.jpg", 
+      "SMPosters/SMPosters_1200x850_2.jpg"
+    ]
   },
   "Natural Medication Magazine Website": {
     projectTitle: "Natural Medication Magazine Website",
-    techniques: ["Web Design", "UX & UI design"],
+    techniques: [
+      "Web Design", 
+      "UX & UI Design"
+    ],
     bodyText: "……",
-    bigImages: ["NUGWebsite1.png", "NUGWebsite2.png"],
+    images: [
+      "NUGWebsite/NUGWebsite_1200x850_1.jpg", 
+      "NUGWebsite/NUGWebsite_1200x1700_2.jpg",
+      "NUGWebsite/NUGWebsite_1200x850_3.jpg",
+      "NUGWebsite/NUGWebsite_1200x850_4.jpg",
+      "NUGWebsite/NUGWebsite_1200x850_5.jpg"
+    ]
   },
-  "Two parallel lines": {
-    projectTitle: "Two parallel lines",
-    techniques: ["Poster Design", "Typography"],
-    bodyText: "……",
-    bigImages: ["Lines1.png", "Lines2.png"],
-  },
-  "Lelu books": {
-    projectTitle: "Lelu books",
-    techniques: ["Logo Design", "Digital printing", "Binding", "Laser Cutting"],
-    bodyText: "……",
-    bigImages: ["LeluBooks1.png", "LeluBooks2.png"],
-  },
+  
 };
 
 import { useRoute } from "vue-router";
@@ -224,6 +331,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .project {
+  width: 100%;
   font-size: 18px;
 }
 
@@ -257,38 +365,9 @@ ul {
   padding: 0;
 }
 
-.main-image {
+.image {
   width: 100%;
   margin-bottom: 10px;
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.preview {
-  width: 300px;
-  height: 285px;
-}
-
-@media (min-width: 500px) {
-  .preview {
-    width: 400px;
-    height: 380px;
-  }
-
-  .main {
-    display: flex;
-  }
-
-  .text-wrapper {
-    flex: 50%;
-  }
-
-  .image-wrapper {
-    flex: 50%;
-  }
-}
 </style>

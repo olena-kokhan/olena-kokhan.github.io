@@ -3,7 +3,7 @@
     :to="{ name: 'work', params: { id: Title } }"
     class="tile"
   >
-    <img v-bind:src="'tiles/' + ImgName" />
+    <img v-bind:src="'MainPage/' + ImgName" />
     <div class="titlebar">
       <h3 class="title youngserif-regular">{{ Title }}</h3>
       <h4 class="subtext roboto-thin">{{ SubText }}</h4>
