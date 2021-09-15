@@ -14,11 +14,13 @@
       </div>
       <div class="image-wrapper">
         <img
-          class="image"
           v-for="bigImage of project.images"
           :key="bigImage"
           :alt="bigImage"
           :src="'/ProjectsPhotos/' + bigImage"
+          class="image"
+          :class="isSmall(bigImage) ? 'small' : 'big'"
+
         />
       </div>
     </div>
@@ -324,6 +326,19 @@ export default {
       project,
     };
   },
+  methods: {
+    isSmall(img) {
+        const smallImgSizes = ['580x440', '580x850' ]
+
+        for(let i=0;i<smallImgSizes.length; i++) {
+          if(img.indexOf(smallImgSizes[i]) > -1) {
+            return true;
+          }
+        }
+
+        return false;
+      }
+  }
 };
 </script>
 
@@ -339,14 +354,19 @@ export default {
 }
 
 .text-wrapper {
+  display: flex;
+  flex-direction: column;
   color: #383838;
   margin: 10px;
 }
 
+
+
 .image-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .project-title {
@@ -367,6 +387,38 @@ ul {
 .image {
   width: 100%;
   margin-bottom: 10px;
+}
+
+@media (min-width: 500px) {
+  .text-wrapper {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .project-title {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  ul {
+    flex: 0 0 35%;
+    text-align: right;
+    padding: 0 20px;
+    min-width: 200px;
+    margin: 0;
+  }
+
+  .project-text {
+    flex: 1 0 0%;
+    padding: 0 20px;
+    text-align: left;
+    border-left: 2px solid #404040;
+  }
+
+  .image.small{
+    width: 49%;
+  }
 }
 
 </style>

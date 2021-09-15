@@ -15,7 +15,7 @@
     >
       <input type="name" placeholder="Your Name" name="name" />
       <input type="email" placeholder="Email" name="email" />
-      <input type="text" placeholder="Message" name="message" />
+      <textarea type="text" placeholder="Message" name="message" autocomplete="off"></textarea>
       <button type="submit">Send message</button>
     </form>
 
@@ -52,14 +52,19 @@ form {
   align-items: center;
 }
 
-input {
+input,
+textarea {
   background-color: #efefef;
   border: none;
   margin-bottom: 20px;
   height: 50px;
-  padding: 5%;
+  padding: 20px;
   width: 80%;
   max-width: 300px;
+}
+
+textarea {
+  height: 250px;
 }
 
 button {

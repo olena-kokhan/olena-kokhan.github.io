@@ -3,6 +3,14 @@
     <router-link class="link-logo" to="/">
       <img class="logo" src="../assets/OK.svg" alt="Logo" />
     </router-link>
+    
+    <div class="desktop-menu youngserif-regular " v-if="!isMobileWidth">
+        <router-link to="/" @click="menuClicked">Work</router-link>
+        <router-link to="/About" @click="menuClicked">About</router-link>
+        <router-link to="/Contact" @click="menuClicked">Contact</router-link>
+    </div>
+
+  <div v-if="isMobileWidth">
     <img
       v-if="!menuVisible"
       class="hamburger"
@@ -17,11 +25,12 @@
       alt="Menu"
       @click="menuClicked"
     />
+    </div>
   </div>
 
   <transition name="fade">
-    <div class="menu youngserif-regular" v-if="menuVisible">
-      <div class="menu-links">
+    <div class="mobile-menu youngserif-regular" v-if="menuVisible && isMobileWidth">
+      <div class="mobile-menu-links">
         <router-link to="/" @click="menuClicked">Work</router-link>
         <router-link to="/About" @click="menuClicked">About</router-link>
         <router-link to="/Contact" @click="menuClicked">Contact</router-link>
@@ -31,12 +40,35 @@
 </template>
 
 <script>
+import { computed, onMounted, onUnmounted, ref, watchEffect } from "vue"
+
 export default {
   name: "Navigation",
+  setup() {
+        const windowWidth = ref(window.innerWidth)
+
+        const onWidthChange = () => windowWidth.value = window.innerWidth
+        onMounted(() => window.addEventListener('resize', onWidthChange))
+        onUnmounted(() => window.removeEventListener('resize', onWidthChange))
+
+        const isMobileWidth = computed(() => {
+          if (windowWidth.value < 500) return true
+          else return false
+        })
+
+        return {
+          isMobileWidth
+        }
+
+  },
+  
   methods: {
     menuClicked() {
       this.menuVisible = !this.menuVisible;
-      if (this.menuVisible) {
+      this.toggleScrollLock(this.menuVisible);
+    },
+    toggleScrollLock(enabled) {
+      if (enabled) {
         document.body.style.overflow = "hidden";
         document.body.style.height = "100%";
       } else {
@@ -50,6 +82,14 @@ export default {
       menuVisible: false,
     };
   },
+  mounted() {
+    watchEffect(() => {
+      if(!this.isMobileWidth) {
+        this.menuVisible = false;
+        this.toggleScrollLock(this.menuVisible)
+      }
+    })
+  }
 };
 </script>
 
@@ -90,7 +130,7 @@ export default {
   height: 30px;
 }
 
-.menu {
+.mobile-menu {
   height: calc(100vh - var(--var-header-height));
   width: 100vw;
   position: fixed;
@@ -102,14 +142,36 @@ export default {
   justify-content: center;
 }
 
-.menu-links {
+.desktop-menu {
+  display: flex;
+}
+
+.desktop-menu a {
+  display: block;
+  margin: 0 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #404040;
+  font-size: 16px;
+  padding: 5px;
+  letter-spacing: 0.5px;
+  padding: 0;
+}
+
+.desktop-menu a:hover,
+.desktop-menu a.router-link-active {
+  border-bottom: 2px solid #404040;
+  cursor: pointer;
+}
+
+.mobile-menu-links {
   display: flex;
   flex-direction: column;
   align-items: center;
   transform: translateY( calc(var(--var-header-height) * -1));
 }
 
-.menu-links a {
+.mobile-menu-links a {
   display: block;
   margin: 0 10px;
   cursor: pointer;
@@ -120,11 +182,11 @@ export default {
   padding: 5px;
 }
 
-.menu-links a:hover {
+.mobile-menu-links a:hover {
   opacity: 1;
 }
 
-.menu-links a.router-link-active {
+.mobile-menu-links a.router-link-active {
   opacity:1;
   cursor: default;
 }

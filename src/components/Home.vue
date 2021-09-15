@@ -104,6 +104,7 @@ export default {
 .tiles {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 </style>
 

@@ -29,11 +29,12 @@ export default {
   position: relative;
   cursor: pointer;
   margin-bottom: 20px;
+  max-width: 414px;
 }
 
 img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 @media (min-width: 500px) {

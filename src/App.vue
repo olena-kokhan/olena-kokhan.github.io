@@ -66,6 +66,7 @@ body {
 
 .youngserif-regular {
   font-family: "YoungSerif Regular";
+  letter-spacing: .3px;
 }
 
 .worksans-regular {
@@ -91,7 +92,7 @@ footer {
   font-weight: bold;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 20px;
+  padding: 50px 20px 0 20px;
 }
 
 .content-wrapper {
@@ -99,7 +100,7 @@ footer {
   justify-content: center;
   margin: 0 auto;
   max-width: 1000px;
-  min-height: 100vh;
+  min-height: calc(100vh - 190px);
 }
 
 .go-up {
