@@ -156,6 +156,8 @@ export default {
   padding: 5px;
   letter-spacing: 0.5px;
   padding: 0;
+  border-bottom: 2px solid transparent;
+
 }
 
 .desktop-menu a:hover,

@@ -371,7 +371,7 @@ export default {
 
 .project-title {
   font-size: 24px;
-  color: black;
+  color: #404040;
   font-weight: bold;
 }
 
@@ -386,6 +386,7 @@ ul {
 
 .image {
   width: 100%;
+  height: 100%;
   margin-bottom: 10px;
 }
 
@@ -417,7 +418,7 @@ ul {
   }
 
   .image.small{
-    width: 49%;
+    width: calc(50% - 5px);
   }
 }
 

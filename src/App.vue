@@ -34,6 +34,8 @@ export default {
 body {
   min-width: 320px;
   margin: 0;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+
 }
 
 #app {
@@ -42,6 +44,10 @@ body {
 @font-face {
   font-family: "WorkSans Regular";
   src: url("./assets/fonts/WorkSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "WorkSans Light";
+  src: url("./assets/fonts/WorkSans-Light.ttf") format("truetype");
 }
 
 @font-face {
@@ -73,6 +79,10 @@ body {
   font-family: "WorkSans Regular";
 }
 
+.worksans-light {
+  font-family: "WorkSans Light";
+}
+
 .playfairdisplay-medium {
   font-family: "PlayFairDisplay Medium";
 }
@@ -93,6 +103,8 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 50px 20px 0 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .content-wrapper {
@@ -108,5 +120,18 @@ footer {
   height: 70px;
   padding: 20px;
   cursor: pointer;
+}
+
+
+@media (min-width: 500px) {
+  .content-wrapper {
+    padding-top: 10px;
+  }
+}
+
+@media (max-height: 500px) {
+  .content-wrapper {
+    padding-top: 0;
+  }
 }
 </style>

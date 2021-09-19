@@ -28,21 +28,13 @@ export default {
   display: flex;
   position: relative;
   cursor: pointer;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   max-width: 414px;
 }
 
 img {
   width: 100%;
   height: 100%;
-}
-
-@media (min-width: 500px) {
-  .tile {
-    width: 49%;
-    margin: 0.5%;
-    max-width: 500px;
-  }
 }
 
 .title,
@@ -67,9 +59,34 @@ img {
 
 .title {
   color: #fcfcfc;
+  font-size: 18px;
 }
 
 .subtext {
-  color: #858585;
+  color: #ddd;
+  font-size: 14px;
+}
+
+@media (min-width: 500px) and (hover: hover) {
+  .tile {
+    width: 49%;
+    margin: 0.5%;
+    max-width: 500px;
+  }
+
+  .titlebar {
+    display: none;
+  }
+
+  .tile:hover .titlebar {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 70%);
+  }
 }
 </style>
