@@ -40,7 +40,7 @@ var projectDataMap = {
       "Collage",
       "Scanning",
     ],
-    bodyText: "……",
+    bodyText: "“Intergenerational Self” is an intimate look at family narratives and the value of memories through the medium of collage.",
     images: [
       "IntergenerationalSelf/IntergenerationalSelf_1200x850__1.jpg",
       "IntergenerationalSelf/IntergenerationalSelf_1200x850_2.jpg",
@@ -62,7 +62,7 @@ var projectDataMap = {
       "Handmade glue binding",
     ],
     bodyText:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "",
     images: [
       "OhArt/OhArt_1200x850_1.jpg",
       "OhArt/OhArt_1200x850_2.jpg",
@@ -82,7 +82,7 @@ var projectDataMap = {
       "Editorial Design", 
       "Magazine layout"
     ],
-    bodyText: "……",
+    bodyText: "Naturheilkunde & Gesundheit is a German magazine about natural medicine. During my work at the publishing house, I was responsible for the layouts of the pages, mostly articles and various additional information (ads, content pages, covers, etc.). On this page, you can find examples of my editorial design for Naturheilkunde & Gesundheit Magazine.",
      images: [
       "NUGMagazine/NUGMagazine_1200x850_1.jpg",
       "NUGMagazine/NUGMagazine_1200x850_2.jpg",
@@ -194,7 +194,12 @@ var projectDataMap = {
       "Silkscreen printing",
       "Logo Design",
     ],
-    bodyText: "……",
+    bodyText: "Say Hi To Design is a casual design exhibition that was held at Rhein-Waal University of Applied Sciences (Germany). The idea was suggested and implemented by my colleague Robine Gillen and me. We wanted to create an event that would bring together design students of our university and give an opportunity to present our works to a broader audience.
+
+We developed the general concept of the event together with its visual identity.  Logo, posters, business cards, exhibition materials as well as merchandise (tote bags, notebooks, stickers) were designed and handmade produced at the university facilities in order to promote the big variety of production opportunities available at the university.
+
+Photo credit: Sven Siebel.
+",
     images: [
       "SHTD/SHTD_1200x850_1.jpg",
       "SHTD/SHTD_580x440_2.jpg",
@@ -299,7 +304,7 @@ var projectDataMap = {
       "Web Design", 
       "UX & UI Design"
     ],
-    bodyText: "……",
+    bodyText: "Development of the digital representation for the printed magazine Naturheilkunde & Gesundheit. For this project, I developed the concept of the website version of the magazine and created the design for desktop, tablet, and mobile versions.",
     images: [
       "NUGWebsite/NUGWebsite_1200x850_1.jpg", 
       "NUGWebsite/NUGWebsite_1200x1700_2.jpg",
