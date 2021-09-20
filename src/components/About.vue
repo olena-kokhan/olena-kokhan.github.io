@@ -7,8 +7,7 @@
             <p class="worksans-light" > I am passionate about editorial design, books and all types of printed matters. 
               In my work I like to experiment and to try find interesting solutions for the projects.
               Also, I am fond of mixing analog and digital tools to get the best out of both.</p>
-            <p class="worksans-light"> If you want to find out more about my experience, please check my CV here. 
-                To get in touch with me, please find my contact detail on the CV or through the contact page.</p>
+            <p class="worksans-light"> If you want to find out more about my experience, please check my CV here. To get in touch with me, please find my contact detail on the CV or through the contact page.</p>
       </div>
 
   </div>
