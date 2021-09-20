@@ -101,7 +101,7 @@ var projectDataMap = {
       "Analogue Design",
       "Handmade production",
     ],
-    bodyText: "Every decision means putting limits on our choices.",
+    bodyText: "While making a decision we are putting limits on your choices. Decision equals limits. The visual presentation of this idea was made during the experimental poster-printing workshop. The whole process of poster creation was computer free and made in analogue way.",
     images: [
       "Decision=Limits/Decision_580x850_1.jpg",
       "Decision=Limits/Decision_580x850_2.jpg",
@@ -124,7 +124,7 @@ var projectDataMap = {
       "Experimental Design",
       "Typography",
     ],
-    bodyText: "……",
+    bodyText: "Double sided book contains two ways of looking at the short story by Vladimir Nabokov: through the written text and image.",
     images: [
       "Symbols/Symbols_1200x850_1.jpg",
       "Symbols/Symbols_1200x850_2.jpg",
