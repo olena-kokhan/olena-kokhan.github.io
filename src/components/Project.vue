@@ -62,7 +62,7 @@ var projectDataMap = {
       "Handmade glue binding",
     ],
     bodyText:
-      "",
+      "The book project that explores the art as a way of travelling to different places in space, time or mind. The book does not have the starting point in the traditional meaning. It can be read from any page. The main goal is to evoke curiosity, inner thinking, and reflection about the viewer personal experience of the concept “traveling through art”.",
     images: [
       "OhArt/OhArt_1200x850_1.jpg",
       "OhArt/OhArt_1200x850_2.jpg",
@@ -101,7 +101,7 @@ var projectDataMap = {
       "Analogue Design",
       "Handmade production",
     ],
-    bodyText: "……",
+    bodyText: "Experimental poster workshop exploring the ",
     images: [
       "Decision=Limits/Decision_580x850_1.jpg",
       "Decision=Limits/Decision_580x850_2.jpg",
@@ -194,12 +194,7 @@ var projectDataMap = {
       "Silkscreen printing",
       "Logo Design",
     ],
-    bodyText: "Say Hi To Design is a casual design exhibition that was held at Rhein-Waal University of Applied Sciences (Germany). The idea was suggested and implemented by my colleague Robine Gillen and me. We wanted to create an event that would bring together design students of our university and give an opportunity to present our works to a broader audience.
-
-We developed the general concept of the event together with its visual identity.  Logo, posters, business cards, exhibition materials as well as merchandise (tote bags, notebooks, stickers) were designed and handmade produced at the university facilities in order to promote the big variety of production opportunities available at the university.
-
-Photo credit: Sven Siebel.
-",
+    bodyText: "Say Hi To Design is a casual design exhibition that was held at Rhein-Waal University of Applied Sciences (Germany). The idea was suggested and implemented by my colleague Robine Gillen and me. We wanted to create an event that would bring together design students of our university and give an opportunity to present our works to a broader audience. We developed the general concept of the event together with its visual identity.  Logo, posters, business cards, exhibition materials as well as merchandise (tote bags, notebooks, stickers) were designed and handmade produced at the university facilities in order to promote the big variety of production opportunities available at the university. Photo credit: Sven Siebel.",
     images: [
       "SHTD/SHTD_1200x850_1.jpg",
       "SHTD/SHTD_580x440_2.jpg",
