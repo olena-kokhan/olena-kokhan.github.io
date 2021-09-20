@@ -40,7 +40,7 @@ var projectDataMap = {
       "Collage",
       "Scanning",
     ],
-    bodyText: "\“Intergenerational Self\” is an intimate look at family narratives and the value of memories through the medium of collage.",
+    bodyText: "\"Intergenerational Self\" is an intimate look at family narratives and the value of memories through the medium of collage.",
     images: [
       "IntergenerationalSelf/IntergenerationalSelf_1200x850__1.jpg",
       "IntergenerationalSelf/IntergenerationalSelf_1200x850_2.jpg",
@@ -101,7 +101,7 @@ var projectDataMap = {
       "Analogue Design",
       "Handmade production",
     ],
-    bodyText: "Experimental poster workshop exploring the ",
+    bodyText: "Every decision means putting limits on our choices.",
     images: [
       "Decision=Limits/Decision_580x850_1.jpg",
       "Decision=Limits/Decision_580x850_2.jpg",
@@ -147,7 +147,7 @@ var projectDataMap = {
       "Logo Design",
       "Layout Design",
     ],
-    bodyText: "……",
+    bodyText: "Creating a new special series of articles including series logo, special elements, and layouts of the article for different types of the spread.",
      images: [
       "NUGNewSeries/NUGNewSeries_1200x850_1.jpg",
       "NUGNewSeries/NUGNewSeries_1200x850_2.jpg",
