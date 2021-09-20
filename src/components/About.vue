@@ -27,7 +27,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 10px 30px;
 }
 
 .img {
@@ -46,11 +46,13 @@ export default {
 
 h1 {
     color: #404040;
+    margin-block-end: 0;
 }
 
 h2 {
     color: #383838;
     opacity: .64;
+    margin-block-start: 0;
 }
 
 p {
@@ -78,6 +80,13 @@ p {
       padding-left: 40px;
   }
 }
+
+@media (min-width: 1200px) {
+  .wrapper {
+    padding: 10px 0;
+  }
+}
+
 
 @media (max-height: 500px) {
   .wrapper {
