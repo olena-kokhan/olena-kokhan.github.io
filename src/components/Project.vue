@@ -160,7 +160,7 @@ var projectDataMap = {
     techniques: [
       "Web Design", 
       "UX & UI design"],
-    bodyText: "……",
+    bodyText: "Web design project for the B2B website of publishing house.",
     images: [
       "SUDWebsite/SUDWebsite_1200x850_1.jpg",
       "SUDWebsite/SUDWebsite_1200x1700_2.jpg",
@@ -173,7 +173,7 @@ var projectDataMap = {
       "Experimental Design", 
       "Poster Design", 
       "Tessellation"],
-    bodyText: "……",
+    bodyText: "Terrain is the result of an experimental design project "Form follows experiment". It is aimed to show how using casual or unexpected object and playing ",
     images: [
       "Terrain/Terrain_580x850_1.jpg",
       "Terrain/Terrain_580x850_2.jpg",
@@ -214,7 +214,7 @@ var projectDataMap = {
   "Caslon": {
     projectTitle: "Caslon",
     techniques: ["Typography", "Book Binding", "Laser Cutting"],
-    bodyText: "……",
+    bodyText: "The project is dedicated to Caslon Typeface. The main idea is to study the typeface from different perspectives to gain a better understanding of various opportunities for font usage. The whole book is made out of one typeface including ornaments and illustrations.",
     images: [
       "Caslon/Caslon_1200x850_1.jpg",
       "Caslon/Caslon_1200x850_2.jpg",
