@@ -173,7 +173,7 @@ var projectDataMap = {
       "Experimental Design", 
       "Poster Design", 
       "Tessellation"],
-    bodyText: "Terrain is the result of an experimental design project "Form follows experiment". It is aimed to show how using casual or unexpected object and playing ",
+    bodyText: "Terrain is the result of an experimental design project \"Form follows experiment\". It is aimed to show how using casual or unexpected object and playing ",
     images: [
       "Terrain/Terrain_580x850_1.jpg",
       "Terrain/Terrain_580x850_2.jpg",
@@ -357,10 +357,9 @@ export default {
   display: flex;
   flex-direction: column;
   color: #383838;
-  margin: 10px;
+  margin: 10px 20px;
+  padding-bottom: 15px;
 }
-
-
 
 .image-wrapper {
   display: flex;
@@ -382,6 +381,7 @@ export default {
 ul {
   list-style-type: none;
   padding: 0;
+  font-size: 15px;
 }
 
 .image {
