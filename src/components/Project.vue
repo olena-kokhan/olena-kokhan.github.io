@@ -40,7 +40,7 @@ var projectDataMap = {
       "Collage",
       "Scanning",
     ],
-    bodyText: "“Intergenerational Self” is an intimate look at family narratives and the value of memories through the medium of collage.",
+    bodyText: "\“Intergenerational Self\” is an intimate look at family narratives and the value of memories through the medium of collage.",
     images: [
       "IntergenerationalSelf/IntergenerationalSelf_1200x850__1.jpg",
       "IntergenerationalSelf/IntergenerationalSelf_1200x850_2.jpg",
@@ -173,7 +173,7 @@ var projectDataMap = {
       "Experimental Design", 
       "Poster Design", 
       "Tessellation"],
-    bodyText: "Terrain is the result of an experimental design project \"Form follows experiment\". It is aimed to show how using casual or unexpected object and playing ",
+    bodyText: "Terrain is the result of an experimental design project \"Form follows experiment\". It is aimed to show how the everyday objects such as coffee can be transformed into new unusual shapes which have the characteristics of tesselations and simultaneously remain objects interesting for an eye exploration.",
     images: [
       "Terrain/Terrain_580x850_1.jpg",
       "Terrain/Terrain_580x850_2.jpg",
@@ -265,7 +265,7 @@ var projectDataMap = {
       "Analogue Design",
       "Handmade production",
     ],
-    bodyText: "……",
+    bodyText: "The topic of a poster is determined by the amount of pressure put on the modern human being. We feel a lot of it in every part of life: work, study, private life, health, society. Very often people feel broken or devastated from all the amount of responsibilities laying on their shoulders. That is why the poster urges you to resist and Don't let it pressure you..",
     images: [
       "Pressure/Pressure_1200x850_1.jpg",
       "Pressure/Pressure_1200x850_2.jpg",
@@ -287,7 +287,7 @@ var projectDataMap = {
       "Illustration", 
       "Typography"
     ],
-    bodyText: "……",
+    bodyText: "Reflection on the negative effects of social media.",
     images: [
       "SMPosters/SMPosters_1200x850_1.jpg", 
       "SMPosters/SMPosters_1200x850_2.jpg"
