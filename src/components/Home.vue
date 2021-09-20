@@ -41,7 +41,7 @@ var mainPageContent = [
   },
   {
     fileName: "NUGNewSeries.jpg",
-    projectTitle: "Natural Medication Magazine Design",
+    projectTitle: "Natural Medication Magazine Series Design",
     subText: "Editorial Design / Magazine",
   },
   {
