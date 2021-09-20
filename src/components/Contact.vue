@@ -13,9 +13,9 @@
       action="https://getform.io/f/189cc22e-b338-42bb-9184-6f9d1072eef5"
       method="POST"
     >
-      <input required type="name" placeholder="Your Name" name="name" autocomplete="off"  />
-      <input required type="email" placeholder="Email" name="email" autocomplete="off" />
-      <textarea required type="text" placeholder="Message" name="message" autocomplete="off" ></textarea>
+      <input required type="name" placeholder="Your Name" name="name" autocomplete="off"  class="worksans-light"/>
+      <input required type="email" placeholder="Email" name="email" autocomplete="off" class="worksans-light" />
+      <textarea required type="text" placeholder="Message" name="message" autocomplete="off" class="worksans-light" ></textarea>
       <button type="submit">Send message</button>
     </form>
 
@@ -86,7 +86,7 @@ textarea {
 }
 
 button {
-  font-family: "WorkSans Regular";
+  font-family: "WorkSans Light";
   background-color: #7d7b7b;
   border: none;
   height: 35px;
@@ -96,18 +96,18 @@ button {
 }
 
 input::-webkit-input-placeholder {
-  font-family: "WorkSans Regular";
+  font-family: "WorkSans Light";
 }
 
 input:-ms-input-placeholder {
-  font-family: "WorkSans Regular";
+  font-family: "WorkSans Light";
 }
 
 input:-moz-placeholder {
-  font-family: "WorkSans Regular";
+  font-family: "WorkSans Light";
 }
 
 input::-moz-placeholder {
-  font-family: "WorkSans Regular";
+  font-family: "WorkSans Light";
 }
 </style>

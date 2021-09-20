@@ -56,41 +56,27 @@ body {
 }
 
 @font-face {
-  font-family: "PlayfairDisplay Medium";
-  src: url("./assets/fonts/PlayfairDisplay-Medium.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "PlayfairDisplay-SemiBold";
-  src: url("./assets/fonts/PlayfairDisplay-SemiBold.ttf") format("truetype");
-}
-
-@font-face {
   font-family: "Roboto Thin";
   src: url("./assets/fonts/Roboto-Thin.ttf") format("truetype");
 }
 
+.youngserif-regular::placeholder,
 .youngserif-regular {
   font-family: "YoungSerif Regular";
   letter-spacing: .3px;
 }
 
+.worksans-regular::placeholder,
 .worksans-regular {
   font-family: "WorkSans Regular";
 }
 
+.worksans-light::placeholder,
 .worksans-light {
   font-family: "WorkSans Light";
 }
 
-.playfairdisplay-medium {
-  font-family: "PlayFairDisplay Medium";
-}
-
-.playfairdisplay-semibold {
-  font-family: "PlayFairDisplay SemiBold";
-}
-
+.roboto-thin::placeholder,
 .roboto-thin {
   font-family: "Roboto Thin";
 }
