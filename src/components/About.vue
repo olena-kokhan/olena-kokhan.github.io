@@ -4,9 +4,7 @@
       <div class="text"> 
             <h1 class="youngserif-regular">Hi, nice to meet you! </h1>
             <h2 class="youngserif-regular">My name is Olena and I am a Graphic Designer. </h2>
-            <p class="worksans-light" > I am passionate about graphic design, enjoy the work on creative project from editorial design, books, magazines or printed matters to wed design, presentations and social media content. 
-              In my work I like to experiment and to try find interesting solutions for the projects.
-              Also, I am fond of mixing analog and digital tools to get the best out of both.</p>
+            <p class="worksans-light" > I am passionate about graphic design, enjoy the work on creative projects from editorial design, books, magazines, or printed matters to web design, presentations and social media content. In my work, I like to experiment and try to find interesting solutions for projects. Also, I am fond of mixing analog and digital tools to get the best out of both.</p>
             <p class="worksans-light"> I have 4+ years of work experience as a Graphic Designer and two degrees: Bachelor in Communication Design and Master in Marketing. If you want to find out more about my experience, please check my CV here. To get in touch with me, please find my contact detail on the CV or through the contact page.</p>
       </div>
 
