@@ -4,8 +4,8 @@
       <div class="text"> 
             <h1 class="youngserif-regular">Hi, nice to meet you! </h1>
             <h2 class="youngserif-regular">My name is Olena and I am a Graphic Designer. </h2>
-            <p class="worksans-light" > I am passionate about graphic design, enjoy working on different creative projects from editorial design, books, magazines, or printed matters to web design, presentations and social media content. In my work, I like to experiment and try to find interesting solutions for projects. Also, I am fond of mixing analog and digital tools to get the best out of both.</p>
-            <p class="worksans-light"> I have 4+ years of work experience as a Graphic Designer and two degrees: Bachelor in Communication Design and Master in Marketing. If you want to find out more about my experience, please check my CV here. To get in touch with me, please find contact details in my <a href="About/CV_Olena_Kokhan_2021.pdf">CV</a> or through the contact page.</p>
+            <p class="worksans-light" > I am passionate about graphic design and enjoy working on different creative projects from editorial design, books, magazines, or printed matters to web design, presentations and social media content. In my work, I like to experiment and try to find interesting solutions for projects. Also, I am fond of mixing analog and digital tools to get the best out of both.</p>
+            <p class="worksans-light"> I have 4+ years of work experience as a Graphic Designer and two degrees: Bachelor in Communication Design (Germany) and Master in Marketing (Ukraine). Now I am based in Manchester, England. If you want to find out more about my experience, please check my <a href="About/CV_Olena_Kokhan_2021.pdf">CV here</a>. To get in touch with me, please find contact details in my CV or through the contact page.</p>
       </div>
 
   </div>
