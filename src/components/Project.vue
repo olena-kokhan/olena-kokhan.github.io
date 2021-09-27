@@ -76,8 +76,8 @@ var projectDataMap = {
       "OhArt/OhArt_1200x850_10.jpg"
     ]
   },
-  "Natural Medication Magazine Design": {
-    projectTitle: "Natural Medication Magazine Design",
+  "Natural Medicine Magazine": {
+    projectTitle: "Natural Medicine Magazine",
     techniques: [
       "Editorial Design", 
       "Magazine layout"
