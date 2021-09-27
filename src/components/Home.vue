@@ -26,7 +26,7 @@ var mainPageContent = [
   },
   {
     fileName: "NUGMagazine.jpg",
-    projectTitle: "Natural Medication Magazine Design",
+    projectTitle: "Natural Medicine Magazine",
     subText: "Editorial Design / Magazine",
   },
   {
