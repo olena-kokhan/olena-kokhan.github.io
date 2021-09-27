@@ -46,8 +46,8 @@ var mainPageContent = [
   },
   {
     fileName: "SUDWebsite.jpg",
-    projectTitle: "Company Website",
-    subText: "Web Design",
+    projectTitle: "S&D Verlag Website",
+    subText: "Web Design / Company Website",
   },
   {
     fileName: "Terrain.jpg",
@@ -81,7 +81,7 @@ var mainPageContent = [
   },
   {
     fileName: "NUGWebsite.jpg",
-    projectTitle: "Natural Medication Magazine Website",
+    projectTitle: "Natural Medicine Website",
     subText: "Web Design",
   },
 ];
