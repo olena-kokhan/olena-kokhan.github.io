@@ -155,8 +155,8 @@ var projectDataMap = {
       "NUGNewSeries/NUGNewSeries_1200x850_4.jpg"
     ]
   },
-  "Company Website": {
-    projectTitle: "Company Website",
+  "S&D Verlag Website": {
+    projectTitle: "S&D Verlag Website",
     techniques: [
       "Web Design", 
       "UX & UI design"],
@@ -293,8 +293,8 @@ var projectDataMap = {
       "SMPosters/SMPosters_1200x850_2.jpg"
     ]
   },
-  "Natural Medication Magazine Website": {
-    projectTitle: "Natural Medication Magazine Website",
+  "Natural Medicine Website": {
+    projectTitle: "Natural Medicine Website",
     techniques: [
       "Web Design", 
       "UX & UI Design"
