@@ -140,8 +140,8 @@ var projectDataMap = {
       "Symbols/Symbols_1200x850_12.jpg"
     ]
   },
-  "Natural Medication Magazine Series Design": {
-    projectTitle: "Natural Medication Magazine Series Design",
+  "Special Series of Articles": {
+    projectTitle: "Special Series of Articles",
     techniques: [
       "Editorial Design", 
       "Logo Design",
