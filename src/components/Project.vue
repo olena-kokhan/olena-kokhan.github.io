@@ -101,7 +101,7 @@ var projectDataMap = {
       "Analogue Design",
       "Handmade production",
     ],
-    bodyText: "While making a decision we are putting limits on your choices. Decision equals limits. The visual presentation of this idea was made during the experimental poster-printing workshop. The whole process of poster creation was computer free and made in analogue way.",
+    bodyText: "To make a decision it is necessary to limit the selection of available choices. Every decision requires limits. During the experimental poster-printing workshop I developed the visual expression of the mentioned idea. The whole process of poster creation was computer-free and made in an analog way. You can see the final result and the process of creating it.",
     images: [
       "Decision=Limits/Decision_580x850_1.jpg",
       "Decision=Limits/Decision_580x850_2.jpg",
