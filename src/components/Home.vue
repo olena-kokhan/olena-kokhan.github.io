@@ -15,6 +15,11 @@ import ProjectTile from "./ProjectTile.vue";
 
 var mainPageContent = [
   {
+    fileName: "SoulCare.jpg",
+    projectTitle: "SoulCare",
+    subText: "Mobile App / Web Design ",
+  },
+  {
     fileName: "IntergenerationalSelf.jpg",
     projectTitle: "Intergenerational Self",
     subText: "Thesis project / Book / Collage",
