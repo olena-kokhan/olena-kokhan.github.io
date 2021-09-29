@@ -38,8 +38,8 @@ var projectDataMap = {
     ],
     bodyText: "Concept for the application aimed to support people strugling with self-acceptance or having a low self-esteem.",
     images: [
-      "SoulCare_1200x850_1.jpg",
-      "SoulCare_1200x850_2.jpg"
+      "SoulCare/SoulCare_1200x850_1.jpg",
+      "SoulCare/SoulCare_1200x850_2.jpg"
     ]
   },
   "Intergenerational Self": {
