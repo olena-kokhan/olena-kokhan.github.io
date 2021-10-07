@@ -15,6 +15,11 @@ import ProjectTile from "./ProjectTile.vue";
 
 var mainPageContent = [
   {
+    fileName: "Moonwake.jpg",
+    projectTitle: "Moonwake",
+    subText: "Vaping Brand / Packaging Design",
+  },
+  {
     fileName: "SoulCare.jpg",
     projectTitle: "SoulCare",
     subText: "Mobile App / Web Design ",
