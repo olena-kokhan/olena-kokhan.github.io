@@ -30,6 +30,22 @@
 <script>
 
 var projectDataMap = {
+  "Moonwake": {
+    projectTitle: "Moonwake",
+    techniques: [
+      "Brand Identity",
+      "Packaging",
+      "Logo",
+    ],
+    bodyText: "Concept idea for the new brand of eLiquids.",
+    images: [
+      "Moonwake/Moonwake_1200x850_1.jpg",
+      "Moonwake/Moonwake_1200x850_2.jpg",
+      "Moonwake/Moonwake_1200x850_3.jpg",
+      "Moonwake/Moonwake_1200x850_4.jpg",
+      "Moonwake/Moonwake_1200x850_5.jpg"
+    ]
+  },
   "SoulCare": {
     projectTitle: "SoulCare",
     techniques: [
